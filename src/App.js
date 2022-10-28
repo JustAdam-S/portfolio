@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+import Header from './Header';
+import Profile from './pages/Profile';
+import logo from './assets/logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hi there
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header logo={logo} />
+      <Profile userName="JustAdam-S" />
     </div>
   );
 }
-
 export default App;
